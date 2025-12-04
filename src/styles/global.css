@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Lato", sans-serif; /* Muy legible */
+  --font-serif: "Playfair Display", serif; /* Elegancia clásica */
+
+  /* PALETA TAQUICHIRI (Teal & Gold) */
+  --color-brand-dark: #115e59; /* Teal 800 - Verde Petróleo Profundo */
+  --color-brand-primary: #134e4a; /* Teal 900 */
+  
+  --color-accent: #d4b483; /* Gold/Sand - Dorado suave, no amarillo */
+  --color-accent-hover: #c19e67;
+  
+  --color-bg-light: #f0fdfa; /* Teal 50 - Fondo muy suave */
+}

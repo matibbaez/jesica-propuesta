@@ -1,0 +1,494 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import FAQItem from '../components/FAQItem.astro'; // (Reutilizá el componente genérico, ajustando colores si querés)
+---
+
+<Layout title="Dra. Jesica P. Taquichiri | Abogada">
+    
+    <Navbar />
+
+    <header id="inicio" class="relative pt-44 lg:pt-60 pb-24 bg-white overflow-hidden">
+        
+        <div class="absolute inset-0 opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/world-map.png')]"></div>
+        
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-dark/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10">
+            
+            <div class="space-y-8 animate-fade-in-up text-center md:text-left">
+                
+                <div class="inline-flex items-center gap-3 px-5 py-2 bg-brand-light border border-teal-100 rounded-full shadow-sm mx-auto md:mx-0">
+                    <div class="flex text-accent text-sm gap-0.5">★★★★★</div>
+                    <span class="text-xs font-bold text-brand-dark uppercase tracking-widest">
+                        82 Casos Exitosos
+                    </span>
+                </div>
+
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-brand-dark leading-[1.1]">
+                    Su derecho no <br> tiene <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-accent italic">fronteras.</span>
+                </h1>
+                
+                <p class="text-slate-500 text-lg leading-relaxed max-w-lg border-l-0 md:border-l-4 border-accent md:pl-6 mx-auto md:mx-0">
+                    Expertos en <strong>Ciudadanías Europeas</strong> y resolución de conflictos locales (Familia y Penal). 
+                    Uniendo familias y abriendo puertas al mundo desde Buenos Aires.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-5 pt-6 justify-center md:justify-start">
+                    
+                    <a href="https://wa.me/54911XXXXXXXX" class="group bg-brand-dark text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-brand-primary transition-all shadow-xl shadow-teal-900/20 hover:-translate-y-1 flex items-center justify-center gap-3">
+                        <span>Iniciar Trámite</span>
+                        <svg class="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                    </a>
+
+                    <a href="#ciudadania" class="group px-8 py-4 rounded-full border-2 border-accent/50 text-brand-dark font-bold uppercase tracking-widest text-xs hover:border-accent hover:bg-accent/10 transition-all flex items-center justify-center gap-2 bg-transparent">
+                        <span class="group-hover:text-brand-primary transition-colors">Ver Ciudadanías</span>
+                        <svg class="w-4 h-4 text-accent group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="relative w-full">
+                <div class="relative h-[500px] w-full rounded-t-full border-x-8 border-t-8 border-white shadow-2xl overflow-hidden bg-slate-100 group">
+                     <img 
+                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1500&auto=format&fit=crop" 
+                        alt="Dra. Jesica Taquichiri" 
+                        class="w-full h-full object-cover object-top opacity-90 hover:scale-105 transition-transform duration-1000"
+                    />
+                    
+                    <div class="absolute top-10 right-4 bg-white/95 backdrop-blur p-4 rounded-lg shadow-lg border-l-4 border-accent max-w-[160px] animate-bounce-slow hidden md:block">
+                        <div class="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center text-brand-dark mb-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <!-- <p class="text-xs font-bold text-brand-dark uppercase leading-tight">Pasaporte Europeo</p> -->
+                    </div>
+
+                    <div class="absolute bottom-8 left-0 bg-brand-dark p-6 shadow-xl">
+                        <p class="text-white font-serif text-xl italic">"Compromiso"</p>
+                        <div class="h-0.5 w-full bg-accent my-2"></div>
+                        <p class="text-accent text-[10px] uppercase tracking-widest font-bold">Defensa Integral</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="servicios" class="py-24 bg-slate-50 relative">
+        
+        <div class="absolute top-0 left-0 w-full h-full opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/world-map.png')] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            
+            <div class="text-center mb-20">
+                <span class="text-accent font-bold tracking-widest text-xs uppercase mb-3 block">
+                    Áreas de Práctica
+                </span>
+                <h2 class="text-3xl md:text-5xl font-serif text-brand-dark font-bold mb-6">
+                    Asesoramiento Legal <br> <span class="italic text-brand-primary">Integral.</span>
+                </h2>
+                <div class="h-1 w-16 bg-accent mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="group bg-white p-8 rounded-sm shadow-sm hover:shadow-2xl transition-all duration-500 border-t-4 border-accent relative hover:-translate-y-2">
+                    <div class="mb-6">
+                        <div class="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center text-brand-dark group-hover:bg-brand-dark group-hover:text-white transition-colors duration-300 shadow-inner">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-serif font-bold text-brand-dark mb-3">Familia y Divorcios</h3>
+                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">
+                        Resolución de conflictos familiares con contención y estrategia. Priorizamos el bienestar de los hijos.
+                    </p>
+                    
+                    <ul class="space-y-3 text-slate-600 text-sm mb-8">
+                        <li class="flex gap-3"><span class="text-accent font-bold">✓</span> Divorcio Express</li>
+                        <li class="flex gap-3"><span class="text-accent font-bold">✓</span> Cuota Alimentaria</li>
+                        <li class="flex gap-3"><span class="text-accent font-bold">✓</span> Régimen de Visitas</li>
+                    </ul>
+
+                    <a href="https://wa.me/54911XXXXXXXX" class="inline-flex items-center gap-2 text-brand-dark font-bold text-xs uppercase tracking-widest border-b-2 border-slate-200 pb-1 group-hover:border-accent group-hover:text-accent transition-all">
+                        Consultar Caso
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+
+                <div class="group bg-white p-8 rounded-sm shadow-sm hover:shadow-2xl transition-all duration-500 border-t-4 border-brand-dark relative hover:-translate-y-2">
+                    <div class="mb-6">
+                        <div class="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center text-brand-dark group-hover:bg-brand-dark group-hover:text-white transition-colors duration-300 shadow-inner">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-serif font-bold text-brand-dark mb-3">Derecho Penal</h3>
+                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">
+                        Defensa técnica inmediata en causas penales. Actuamos con celeridad para proteger su libertad.
+                    </p>
+                    
+                    <ul class="space-y-3 text-slate-600 text-sm mb-8">
+                        <li class="flex gap-3"><span class="text-brand-dark font-bold">✓</span> Excarcelaciones</li>
+                        <li class="flex gap-3"><span class="text-brand-dark font-bold">✓</span> Eximición de Prisión</li>
+                        <li class="flex gap-3"><span class="text-brand-dark font-bold">✓</span> Defensas Penales</li>
+                    </ul>
+
+                    <a href="https://wa.me/54911XXXXXXXX" class="inline-flex items-center gap-2 text-brand-dark font-bold text-xs uppercase tracking-widest border-b-2 border-slate-200 pb-1 group-hover:border-brand-dark transition-all">
+                        Urgencia 24hs
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+
+                <div class="group bg-white p-8 rounded-sm shadow-sm hover:shadow-2xl transition-all duration-500 border-t-4 border-accent relative hover:-translate-y-2">
+                    <div class="mb-6">
+                        <div class="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center text-brand-dark group-hover:bg-brand-dark group-hover:text-white transition-colors duration-300 shadow-inner">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-serif font-bold text-brand-dark mb-3">Ciudadanías</h3>
+                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">
+                        Gestión integral de carpetas para ciudadanía Italiana y Española. Rectificación de partidas y turnos.
+                    </p>
+                    
+                    <ul class="space-y-3 text-slate-600 text-sm mb-8">
+                        <li class="flex gap-3"><span class="text-accent font-bold">✓</span> Ciudadanía Italiana</li>
+                        <li class="flex gap-3"><span class="text-accent font-bold">✓</span> Ciudadanía Española</li>
+                        <li class="flex gap-3"><span class="text-accent font-bold">✓</span> Armado de Carpetas</li>
+                    </ul>
+
+                    <a href="https://wa.me/54911XXXXXXXX" class="inline-flex items-center gap-2 text-brand-dark font-bold text-xs uppercase tracking-widest border-b-2 border-slate-200 pb-1 group-hover:border-accent group-hover:text-accent transition-all">
+                        Iniciar Trámite
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-brand-primary text-white relative overflow-hidden border-y border-teal-800">
+        
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/binding-dark.png')]"></div>
+        
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px] -translate-x-1/2 translate-y-1/3 pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                
+                <div class="lg:w-1/2 space-y-8">
+                    <div>
+                        <span class="text-accent font-bold tracking-widest text-xs uppercase mb-3 block">
+                            Nuestra Filosofía
+                        </span>
+                        <h2 class="text-3xl md:text-5xl font-serif font-bold leading-tight text-white">
+                            Rigor jurídico para <br> 
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-200">trámites exitosos.</span>
+                        </h2>
+                    </div>
+                    
+                    <p class="text-teal-100 text-lg leading-relaxed font-light border-l-2 border-accent/50 pl-6">
+                        A diferencia de una gestoría tradicional, aquí cada carpeta de ciudadanía y cada acuerdo de familia es revisado con la mirada técnica de una abogada matriculada.
+                    </p>
+
+                    <div class="space-y-8 pt-6">
+                        
+                        <div class="flex gap-5 group">
+                            <div class="w-14 h-14 rounded-full bg-brand-dark border border-teal-700 flex items-center justify-center text-accent shrink-0 group-hover:border-accent transition-colors duration-500 shadow-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg font-serif mb-1 group-hover:text-accent transition-colors">Análisis de Viabilidad</h4>
+                                <p class="text-teal-200/80 text-sm leading-relaxed">No iniciamos trámites sin estar seguros. Revisamos actas y sentencias para evitar rechazos consulares o judiciales.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-5 group">
+                            <div class="w-14 h-14 rounded-full bg-brand-dark border border-teal-700 flex items-center justify-center text-accent shrink-0 group-hover:border-accent transition-colors duration-500 shadow-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg font-serif mb-1 group-hover:text-accent transition-colors">Gestión Sin Fronteras</h4>
+                                <p class="text-teal-200/80 text-sm leading-relaxed">Resolvemos rectificaciones de partidas y juicios de filiación en Argentina necesarios para su ciudadanía europea.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 relative">
+                    <div class="relative h-[500px] w-full rounded-tr-[4rem] rounded-bl-[4rem] overflow-hidden shadow-2xl border-4 border-white/5 bg-brand-dark group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop" 
+                            alt="Estrategia Legal Taquichiri" 
+                            class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 grayscale mix-blend-luminosity"
+                        />
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent"></div>
+
+                        <div class="absolute bottom-10 left-10 right-10 text-center">
+                            <p class="text-accent font-serif text-2xl italic mb-4">"Profesionalismo en cada paso."</p>
+                            <a href="https://wa.me/54911XXXXXXXX" class="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest border-b border-accent pb-1 hover:text-accent transition-colors">
+                                Coordinar Videollamada
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute -top-4 -right-4 w-full h-full border border-accent/20 rounded-tr-[4rem] rounded-bl-[4rem] -z-10"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   <section id="sobre-mi" class="py-24 bg-white relative overflow-hidden">
+        
+        <div class="absolute top-20 left-0 w-96 h-96 bg-brand-dark/5 rounded-full blur-[80px] -translate-x-1/2 pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                
+                <div class="lg:w-5/12 relative">
+                    <div class="absolute inset-0 border-2 border-accent rounded-tr-[4rem] rounded-bl-[4rem] translate-x-4 translate-y-4 z-0 hidden md:block"></div>
+                    
+                    <div class="relative z-10 rounded-tr-[4rem] rounded-bl-[4rem] overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/5] group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=1470&auto=format&fit=crop" 
+                            alt="Dra. Jesica Taquichiri" 
+                            class="w-full h-full object-cover object-top grayscale contrast-110 group-hover:grayscale-0 transition-all duration-1000"
+                        />
+                        
+                        <div class="absolute bottom-0 left-0 bg-brand-dark text-white px-8 py-4 rounded-tr-2xl shadow-lg">
+                            <p class="font-serif italic text-lg">"Compromiso real."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-7/12 space-y-8">
+                    
+                    <div>
+                        <span class="text-accent font-bold tracking-widest text-xs uppercase mb-3 block">
+                            Trayectoria
+                        </span>
+                        <h2 class="text-3xl md:text-5xl font-serif text-brand-dark font-bold leading-tight">
+                            Abogada de confianza, <br> <span class="text-brand-primary/80">gestión sin fronteras.</span>
+                        </h2>
+                    </div>
+
+                    <div class="text-slate-600 text-lg leading-relaxed space-y-6 font-light">
+                        <p>
+                            Ejerzo la profesión con una premisa clara: <strong>el derecho es una herramienta para mejorar la vida de las personas</strong>. Ya sea resolviendo un conflicto familiar doloroso, defendiendo la libertad de un cliente o gestionando la ciudadanía que abre puertas al futuro.
+                        </p>
+                        <p>
+                            Mi estudio combina la **atención personalizada** (usted habla conmigo, no con un sistema) con la eficiencia necesaria para destrabar trámites burocráticos.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                        <div class="flex items-start gap-4 p-4 rounded-sm bg-brand-light border border-teal-100/50">
+                            <div class="text-accent text-2xl">⚖️</div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark text-sm uppercase tracking-wider">Litigio Penal</h4>
+                                <p class="text-slate-500 text-xs mt-1">Defensa técnica activa en fueros criminales y correccionales.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 rounded-sm bg-brand-light border border-teal-100/50">
+                            <div class="text-accent text-2xl">✈️</div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark text-sm uppercase tracking-wider">Ciudadanía</h4>
+                                <p class="text-slate-500 text-xs mt-1">Experta en armado de carpetas consulares y vía judicial.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <p class="font-serif text-xl text-brand-dark font-bold">Dra. Jesica P. Taquichiri</p>
+                            <p class="text-xs text-accent uppercase tracking-widest font-bold">Matrícula Profesional</p>
+                        </div>
+                        <a href="#contacto" class="text-brand-dark font-bold text-xs uppercase tracking-widest hover:text-accent transition-colors flex items-center gap-2">
+                            Contactar <span class="text-xl">→</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-24 pb-32 bg-slate-50 relative overflow-hidden">
+        
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03]"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-teal-100 rounded-full shadow-sm mb-6">
+                    <span class="text-accent text-sm flex gap-0.5">★★★★★</span>
+                    <span class="text-xs font-bold text-brand-dark uppercase tracking-widest">
+                        82 Casos Exitosos
+                    </span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-serif text-brand-dark font-bold mb-4">
+                    Historias que construyen confianza.
+                </h2>
+                <p class="text-slate-500 text-lg max-w-2xl mx-auto">
+                    Detrás de cada expediente hay una vida. Gracias por elegirnos para defenderla.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-8 rounded-tr-[2rem] rounded-bl-[2rem] shadow-lg border border-slate-100 hover:-translate-y-2 transition-transform duration-300 relative group">
+                    <div class="absolute top-0 right-0 w-12 h-12 bg-teal-50 rounded-bl-[2rem] flex items-center justify-center text-brand-dark font-serif text-2xl opacity-50">”</div>
+                    <div class="flex text-accent text-xs mb-4">★★★★★</div>
+                    <p class="text-slate-600 italic text-sm leading-relaxed mb-6">
+                        "Jesica es una profesional increíble. Me ayudó con mi ciudadanía italiana cuando estaba trabada hace años. Súper clara y ejecutiva."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-8 h-8 rounded-full bg-brand-dark text-teal-100 flex items-center justify-center font-bold text-xs">L</div>
+                        <div>
+                            <p class="text-brand-dark font-bold text-xs uppercase tracking-wider">Luciana P.</p>
+                            <p class="text-[10px] text-slate-400">Ciudadanía</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-tr-[2rem] rounded-bl-[2rem] shadow-lg border border-slate-100 hover:-translate-y-2 transition-transform duration-300 relative group">
+                    <div class="absolute top-0 right-0 w-12 h-12 bg-teal-50 rounded-bl-[2rem] flex items-center justify-center text-brand-dark font-serif text-2xl opacity-50">”</div>
+                    <div class="flex text-accent text-xs mb-4">★★★★★</div>
+                    <p class="text-slate-600 italic text-sm leading-relaxed mb-6">
+                        "Muy humana. Me acompañó en un proceso de familia muy difícil con mucha contención. No es solo una abogada, es una aliada."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-8 h-8 rounded-full bg-brand-dark text-teal-100 flex items-center justify-center font-bold text-xs">M</div>
+                        <div>
+                            <p class="text-brand-dark font-bold text-xs uppercase tracking-wider">Marcelo G.</p>
+                            <p class="text-[10px] text-slate-400">Familia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-tr-[2rem] rounded-bl-[2rem] shadow-lg border border-slate-100 hover:-translate-y-2 transition-transform duration-300 relative group">
+                    <div class="absolute top-0 right-0 w-12 h-12 bg-teal-50 rounded-bl-[2rem] flex items-center justify-center text-brand-dark font-serif text-2xl opacity-50">”</div>
+                    <div class="flex text-accent text-xs mb-4">★★★★★</div>
+                    <p class="text-slate-600 italic text-sm leading-relaxed mb-6">
+                        "Excelente gestión penal. Actuó rápido en una urgencia de fin de semana y resolvió la situación de mi hijo. Eternamente agradecida."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-8 h-8 rounded-full bg-brand-dark text-teal-100 flex items-center justify-center font-bold text-xs">S</div>
+                        <div>
+                            <p class="text-brand-dark font-bold text-xs uppercase tracking-wider">Susana B.</p>
+                            <p class="text-[10px] text-slate-400">Penal</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-12 relative z-20">
+                <a href="#" class="text-brand-dark font-bold text-xs uppercase tracking-widest border-b-2 border-accent pb-1 hover:text-accent transition-colors">
+                    Ver las 82 reseñas en Google
+                </a>
+            </div>
+
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-[calc(100%+1.3px)] h-[60px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,45 C150,90 350,0 600,45 C850,90 1050,0 1200,45 L1200,50 L0,50 Z" class="fill-accent"></path>
+                <path d="M0,48 C150,93 350,3 600,48 C850,93 1050,3 1200,48 L1200,120 L0,120 Z" class="fill-brand-primary"></path>
+            </svg>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-brand-primary text-teal-100/80 border-t-4 border-accent font-sans text-sm relative overflow-hidden">
+        
+        <div class="absolute bottom-0 left-1/2 w-[800px] h-[300px] bg-accent/5 rounded-full blur-[120px] pointer-events-none -translate-x-1/2 translate-y-1/2"></div>
+
+        <div class="container mx-auto px-6 py-16 relative z-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-serif text-2xl text-white font-black tracking-wide">DRA. TAQUICHIRI</h3>
+                        <p class="text-[10px] uppercase tracking-[0.2em] text-accent font-bold mt-1">Abogada & Consultora</p>
+                    </div>
+                    <p class="text-teal-200/70 leading-relaxed text-sm border-l-2 border-accent/30 pl-4">
+                        Soluciones jurídicas integrales con enfoque humano. Acompañamos sus proyectos de ciudadanía y defendemos sus derechos.
+                    </p>
+                    
+                    <div class="pt-2">
+                        <a href="https://instagram.com" target="_blank" class="inline-flex items-center gap-2 text-white hover:text-accent transition-colors text-xs font-bold uppercase tracking-widest group">
+                            <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-accent group-hover:text-brand-dark transition-colors">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            </div>
+                            @jesicataquichiri
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-white font-bold text-lg mb-6 border-b border-teal-800 pb-2 inline-block">
+                        Áreas Legales
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="#familia" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Divorcios Express</a></li>
+                        <li><a href="#familia" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Cuota Alimentaria</a></li>
+                        <li><a href="#penal" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Excarcelaciones</a></li>
+                        <li><a href="#penal" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Eximición de Prisión</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-white font-bold text-lg mb-6 border-b border-teal-800 pb-2 inline-block">
+                        Ciudadanías
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="#ciudadania" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Ciudadanía Italiana</a></li>
+                        <li><a href="#ciudadania" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Ciudadanía Española</a></li>
+                        <li><a href="#ciudadania" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Rectificación de Actas</a></li>
+                        <li><a href="#ciudadania" class="hover:text-accent transition-colors block hover:translate-x-1 duration-300">› Armado de Carpetas</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-white font-bold text-lg mb-6 border-b border-teal-800 pb-2 inline-block">
+                        Contacto
+                    </h4>
+                    <ul class="space-y-5">
+                        <li>
+                            <span class="text-xs uppercase tracking-widest text-accent font-bold block mb-1">WhatsApp</span>
+                            <a href="https://wa.me/54911XXXXXXXX" class="text-xl text-white font-black hover:text-accent transition-colors tracking-wide block">
+                                11 XXXX-XXXX
+                            </a>
+                        </li>
+                        <li>
+                            <span class="text-xs uppercase tracking-widest text-accent font-bold block mb-1">Email</span>
+                            <a href="mailto:estudiotaquichiri@gmail.com" class="hover:text-white transition-colors border-b border-teal-800 pb-0.5 text-xs">
+                                estudiotaquichiri@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <span class="text-xs uppercase tracking-widest text-accent font-bold block mb-1">Ubicación</span>
+                            <span class="text-teal-300">Zona Oeste / CABA</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-teal-900 pt-8 mt-12 flex flex-col md:flex-row justify-between text-[10px] text-teal-500 uppercase tracking-widest">
+                <p>&copy; 2025 Dra. Jesica P. Taquichiri.</p>
+                <div class="flex gap-6 mt-2 md:mt-0">
+                    <a href="#" class="hover:text-accent transition-colors">Aviso Legal</a>
+                    <a href="#" class="hover:text-accent transition-colors">Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</Layout>
